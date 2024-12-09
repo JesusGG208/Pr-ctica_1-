@@ -14,5 +14,5 @@ function cifradoCesar() {
 }
 
 function descifrar(alfabeto, texto, rota) {
-    
+    let mensajeDescifrado = "";
 }

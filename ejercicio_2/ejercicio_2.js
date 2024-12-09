@@ -6,7 +6,7 @@ function validaFormulario() {
     let indicio = document.getElementById("indicio");
 
     // La expresión regular para la contraseña
-    let expContrasena = /^[A-Z][A-Za-z\d]{5,}$/;
+    let expContrasena = /^[A-Z][A-Za-z0-9]{4,}[0-9]+$/;
 
     // Se verifica si la contraseña sigue la condición de la expresión regular
     if (expContrasena.test(contrasena.value) === false) {

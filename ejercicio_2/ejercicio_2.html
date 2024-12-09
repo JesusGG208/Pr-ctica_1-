@@ -8,11 +8,35 @@
 </head>
 
 <body>
-    <form action="cambia_cuenta.php" method="post" onsubmit="">
+    <!--El formulario-->
+    <form action="cambia_cuenta.php" method="post" onsubmit="return validaFormulario(this)">
         <h1>Configuración de usuario</h1>
         <h2>Inicio de sesión</h2>
+        <p>
+            <label for="inicio">¿Cuando quieres que Windows te vuelva a pedir que inicies sesión?</label>
+            <select name="inicio" id="inicio">
+                <option value="activado">Cuando el PC se activa tras haber estado en suspensión</option>
+                <option value="nunca">Nunca</option>
+            </select>
+        </p>
+
         <h2>Contraseña</h2>
+        <p>
+            <label for="nueva_contrasena">Nueva contraseña</label>
+            <input type="password" id="nueva_contrasena" name="nueva_contrasena"> <br>
+            <label for="confirmar_contrasena">Vuelve a escribir la contraseña</label>
+            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"> <br>
+            <label for="indicio">Indicio de contraseña</label>
+            <textarea id="indicio" name="indicio"></textarea>
+        </p>
+
         <h2>Privacidad</h2>
+        <p>
+            <input type="checkbox" id="detalles" name="detalles" value="mostrar_detalles" required>
+            <label for="detalles">Mostrar detalles de la cuenta en la pantalla de inicio de sesión</label>
+        </p>
+
+        <button type="submit">Aceptar</button>
     </form>
     <script src="ejercicio_2.js"></script>
 </body>

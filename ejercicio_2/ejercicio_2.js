@@ -1,15 +1,15 @@
 // La función que valida el formulario
 function validaFormulario() {
     // Los inputs que importan en este ejercicio
-    let contrasena = document.getElementById("nueva_contrasena");
-    let contrasena2 = document.getElementById("confirmar_contrasena");
+    let contrasena = document.getElementById("nuevaContrasena");
+    let contrasena2 = document.getElementById("confirmarContrasena");
     let indicio = document.getElementById("indicio");
 
     // La expresión regular para la contraseña
-    let exp_contrasena = /^[A-Z][A-Za-z\d]{5,}$/;
+    let expContrasena = /^[A-Z][A-Za-z\d]{5,}$/;
 
     // Se verifica si la contraseña sigue la condición de la expresión regular
-    if (exp_contrasena.test(contrasena.value) === false) {
+    if (expContrasena.test(contrasena.value) === false) {
         alert("La contraseña debe empezar por una letra mayúscula, tener un mínimo de 6 caracteres y contener, al menos, un dígito"); // Muestra el mensaje
         contrasena.focus(); // Cuando se muestre el mensaje, este input tomará el foco
         return false;

@@ -1,6 +1,6 @@
 // La función que valida el formulario
 function validaFormulario() {
-    // Los inputs que importan en este ejercicio
+    // Los inputs
     let contrasena = document.getElementById("nuevaContrasena");
     let contrasena2 = document.getElementById("confirmarContrasena");
     let indicio = document.getElementById("indicio");

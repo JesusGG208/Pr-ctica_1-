@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
+    <style>
+        #resultado {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Cifrado César</h1>
-    <form method="post" onsubmit="return cifradoCesar(this)">
-        <h2>- Descifrar -</h2>
+    <h2>- Descifrar -</h2>
         <p>
             <label for="alfabeto">Alfabeto</label>
             <select name="alfabeto" id="alfabeto">
@@ -28,9 +32,11 @@
             <input type="number" id="rotacion" name="rotacion" required>
         </p>
         <p>
-            <button type="submit">Descifrar</button>
+            <button id="descifrar">Descifrar</button>
         </p>
-    </form>
+        <p>
+            <span id="resultado"></span>
+        </p>
     <script src="ejercicio_3.js"></script>
 </body>
 
